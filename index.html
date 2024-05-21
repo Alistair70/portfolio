@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+        
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>            
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">My Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Welcome to my portfolio website! I'm a software engineer passionate about creating innovative solutions.</p>
+    <p>I have experience in...</p>
+    <!-- Add more details about yourself here -->
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+        <div class="image-group" data-group="1">
+            <img class="thumbnail" src="random_pw_gen_ss.png" alt="Image 1" style="width:200px; cursor:pointer" onclick="openModal(this)">
+            <img class="thumbnail" src="random_pw_gen_upper_lower_ss.png" alt="Image 1" style="width:200px; cursor:pointer" onclick="openModal(this)">
+            <img class="thumbnail" src="random_pw_gen_ss.png" alt="Image 1" style="width:200px; cursor:pointer" onclick="openModal(this)">
+        </div>
+        <!-- Add images, links, or other details about your projects -->
+    </div>
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of Project 2</p>
+        <div class="image-group" data-group="2">
+            <img class="thumbnail" src="random_pw_gen_all_lower_ss.png" alt="Password with all Lower Case Letters" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
+            <img class="thumbnail" src="random_pw_gen_upper_lower_ss.png" alt="Password with Upper and Lower Case Letters" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
+            <img class="thumbnail" src="random_pw_gen_upper_lower_sym_ss.png" alt="Password with Upper and Lower Case Letters with Symbols" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
+            <img class="thumbnail" src="random_pw_gen_upper_lower_sym_num_ss.png" alt="Password with Upper and Lower Case Letters with Symbols and Numbers" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
+            <img class="thumbnail" src="random_pw_gen_upper_lower_sym_longer_ss.png" alt="Longer Password with Upper and Lower Case Letters with Symbols and Numbers" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
+        </div>
+    </div>
+    <!-- Add more projects as needed -->
+</section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+        
+        <!-- Add images, links, or other details about your projects -->
+    </div>
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of Project 2</p>
+    </div>
+    <!-- Add more projects as needed -->
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="project">
+        <h3>New York Institute of Technology </h3>
+        <p>Bachelor of Science in Computer Science, cum laude</p>
+        <!-- Add images, links, or other details about your projects -->
+    </div>
+    <div class="project">
+        <h3>Westchester Community College</h3>
+        <p>Associates in Computer Science</p>
+    </div>
+    <!-- Add more projects as needed -->
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to get in touch with me!</p>
+    <form action="contact.php" method="POST" >
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class = "center">
+            <button type="submit" class  ="btn_new">Send</button>
+        </div>
+        
+    </form>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 My Portfolio</p>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
