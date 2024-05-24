@@ -32,24 +32,40 @@
 <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-        <h3>Project 1</h3>
+        <h3>Personal Finance Tracker</h3>
         <p>Description of Project 1</p>
-        <div class="image-group" data-group="1">
-            <img class="thumbnail" src="random_pw_gen_ss.png" alt="Image 1" style="width:200px; cursor:pointer" onclick="openModal(this)">
-            <img class="thumbnail" src="random_pw_gen_upper_lower_ss.png" alt="Image 1" style="width:200px; cursor:pointer" onclick="openModal(this)">
-            <img class="thumbnail" src="random_pw_gen_ss.png" alt="Image 1" style="width:200px; cursor:pointer" onclick="openModal(this)">
+        <div class="image-group" data-group="1" style="text-align: center;">
+            <img class="thumbnail" src="financial_tracker\financial_tracker_dash_1.PNG" alt="Financial Tracker Dashboard" style="width:80px; cursor:pointer" onclick="openModal(this,'1')">
+            <img class="thumbnail" src="financial_tracker\financial_tracker_dash_2.PNG" alt="Financial Tracker Dashboard" style="width:90px; cursor:pointer" onclick="openModal(this,'1')">
+            <img class="thumbnail" src="financial_tracker\add_income.PNG" alt="Add Income Amount" style="width:150px; cursor:pointer" onclick="openModal(this,'1')">
+            <img class="thumbnail" src="financial_tracker\add_remove_income_types.PNG" alt="Add New Income Category" style="width:130px; cursor:pointer" onclick="openModal(this,'1')">
+            <img class="thumbnail" src="financial_tracker\view_income_entries.PNG" alt="View Income Entries" style="width:120px; cursor:pointer" onclick="openModal(this,'1')">
+            <img class="thumbnail" src="financial_tracker\add_expense.PNG" alt="Add Expense Amount" style="width:90px; cursor:pointer" onclick="openModal(this,'1')">
+            <img class="thumbnail" src="financial_tracker\add_remove_expense_types.PNG" alt="Add New Expense Category" style="width:130px; cursor:pointer" onclick="openModal(this,'1')">
+            <img class="thumbnail" src="financial_tracker\view_expense_entries.PNG" alt="View Expense Entries" style="width:120px; cursor:pointer" onclick="openModal(this,'1')">
+            <img class="thumbnail" src="financial_tracker\budget.PNG" alt="Add/View/Update Budget Amounts" style="width:100px; cursor:pointer" onclick="openModal(this,'1')">
         </div>
         <!-- Add images, links, or other details about your projects -->
     </div>
     <div class="project">
-        <h3>Project 2</h3>
+        <h3>Stock Tracker</h3>
         <p>Description of Project 2</p>
-        <div class="image-group" data-group="2">
-            <img class="thumbnail" src="random_pw_gen_all_lower_ss.png" alt="Password with all Lower Case Letters" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
-            <img class="thumbnail" src="random_pw_gen_upper_lower_ss.png" alt="Password with Upper and Lower Case Letters" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
-            <img class="thumbnail" src="random_pw_gen_upper_lower_sym_ss.png" alt="Password with Upper and Lower Case Letters with Symbols" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
-            <img class="thumbnail" src="random_pw_gen_upper_lower_sym_num_ss.png" alt="Password with Upper and Lower Case Letters with Symbols and Numbers" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
-            <img class="thumbnail" src="random_pw_gen_upper_lower_sym_longer_ss.png" alt="Longer Password with Upper and Lower Case Letters with Symbols and Numbers" style="width:200px; cursor:pointer" onclick="openModal(this,'2')">
+        <div class="image-group" data-group="2" style="text-align: center;">
+            <img class="thumbnail" src="stock_tracker\aapl_amzn_stock_tracking.PNG" alt="Stock Performace of Stocks in User's Portfolio" style="width:250px; cursor:pointer" onclick="openModal(this,'2')">
+            <img class="thumbnail" src="stock_tracker\current_stocks.PNG" alt="Directly Shows Stocks in User's Portfolio" style="width:100px; cursor:pointer" onclick="openModal(this,'2')">
+            <img class="thumbnail" src="stock_tracker\search_results.PNG" alt="Search Results for Stock Search" style="width:85px; cursor:pointer" onclick="openModal(this,'2')">
+        </div>
+        <!-- Add images, links, or other details about your projects -->
+    </div>
+    <div class="project">
+        <h3>Random Passsword Generator</h3>
+        <p>Description of Project 3</p>
+        <div class="image-group" data-group="3" style="text-align: center;">
+            <img class="thumbnail" src="random_pw_gen\random_pw_gen_lower.png" alt="Password with all Lower Case Letters" style="width:100px; cursor:pointer" onclick="openModal(this,'3')">
+            <img class="thumbnail" src="random_pw_gen\random_pw_gen_upper_lower.png" alt="Password with Upper and Lower Case Letters" style="width:100px; cursor:pointer" onclick="openModal(this,'3')">
+            <img class="thumbnail" src="random_pw_gen\random_pw_gen_upper_lower_sym.png" alt="Password with Upper and Lower Case Letters with Symbols" style="width: 100px; cursor:pointer" onclick="openModal(this,'3')">
+            <img class="thumbnail" src="random_pw_gen\random_pw_gen_upper_lower_sym_num.png" alt="Password with Upper and Lower Case Letters with Symbols and Numbers" style="width:100px; cursor:pointer" onclick="openModal(this,'3')">
+            <img class="thumbnail" src="random_pw_gen\random_pw_gen_upper_lower_sym_num_long.png" alt="Longer Password with Upper and Lower Case Letters with Symbols and Numbers" style="width: 100px;; cursor:pointer" onclick="openModal(this,'3')">
         </div>
     </div>
     <!-- Add more projects as needed -->
@@ -97,20 +113,23 @@
     <h2>Contact</h2>
     <p>Feel free to get in touch with me!</p>
     <form action="contact.php" method="POST" >
-        <div class="form-group">
+        <div class="form-group" style="text-align: center;">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="text-align: center;">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="text-align: center;">
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
         </div>
-        <div class = "center">
-            <button type="submit" class  ="btn_new">Send</button>
+        <div class="form-group" style="text-align: center;">
+            <p id = output></p><br>
+        </div>        
+        <div class = "center" >
+            <button id="submit" type="submit" class  ="btn_new">Send</button>
         </div>
         
     </form>

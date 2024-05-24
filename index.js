@@ -52,3 +52,43 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+document.getElementById("submit").addEventListener("click", function(event) {
+  event.preventDefault();
+  // Gets user inputted credentials from form
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var mess = document.getElementById('message').value;
+
+  // Checks if username feild is blank
+  if(name === "")
+  {
+      document.getElementById("output").innerHTML = "Enter Name";
+  }
+  //Check if password feild is blank
+  else if(email === "")
+  {
+      document.getElementById("output").innerHTML = "Enter Email";
+  }
+
+  else if(mess === "")
+    {
+        document.getElementById("output").innerHTML = "Enter Message";
+    }
+
+  //If checks are cleared request is sent to backend to validate credentials
+  else{
+      fetch('https://expense-tracker-aytr.onrender.com/save_massage', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ name:name, email:email, mess:mess })
+      })
+      .then(response => response.json())
+      .then(data => 
+      {
+          console.log(data.message)
+      })
+      }
+});
