@@ -89,6 +89,9 @@ document.getElementById("submit").addEventListener("click", function(event) {
       .then(data => 
       {
           console.log(data.message)
+          document.getElementById('name').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('message').value = '';
       })
       }
 });
