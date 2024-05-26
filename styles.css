@@ -55,6 +55,7 @@ p{
     border: 1px solid #ccc;
     border-radius: 25px;
     padding: 20px;
+    background-color: rgb(225, 225, 225);
 }
 
 .form-group {
@@ -209,4 +210,8 @@ button{
 /* Add a stronger shadow on hover */
 .thumbnail:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Shadow on hover */
+}
+
+a {
+    text-decoration: none;
 }
