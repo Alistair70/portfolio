@@ -78,7 +78,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
 
   //If checks are cleared request is sent to backend to validate credentials
   else{
-      fetch('https://expense-tracker-aytr.onrender.com/save_massage', {
+      fetch('https://main-py-server.onrender.com/save_massage', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
