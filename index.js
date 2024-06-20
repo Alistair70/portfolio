@@ -94,3 +94,19 @@ document.getElementById("submit").addEventListener("click", function(event) {
       })
       }
 });
+
+document.getElementById("exp_tr_demo").addEventListener("click", function() {
+    window.open('https://landing.expense-tracker-demo.site/', '_blank');
+});
+document.getElementById("exp_tr_repo").addEventListener("click", function() {
+    window.open('https://github.com/Alistair70/expense_tracker', '_blank');
+});
+document.getElementById("st_repo").addEventListener("click", function() {
+    window.open('https://github.com/Alistair70/stock_tracker', '_blank');
+});
+document.getElementById("rpg_demo").addEventListener("click", function() {
+    window.open('https://ac-random-pw-gen.netlify.app', '_blank');
+});
+document.getElementById("rpg_repo").addEventListener("click", function() {
+    window.open('https://github.com/Alistair70/random-pw-gen', '_blank');
+});

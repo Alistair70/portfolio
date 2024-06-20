@@ -24,10 +24,12 @@
 
 <section id="about">
     <h2>About Me</h2>
-    <p>I am an aspiring back-end developer with a strong foundation in server-side programming and a passion for creating robust and scalable applications.</p>
-    <p>My academic background in computer science, combined with practical project experience, has honed my skills in various back-end technologies and programming languages, particularly Python, Java, and SQL. I am proficient in frameworks such as Flask and Spring Boot, and have a solid understanding of database management and API development.</p>
-    <p>I have experience in include Java, Spring, Python, Flask, SQL, NoSQL, HTML, JavaScript, CSS and Git/GitHub</p>
-    <!-- Add more details about yourself here -->
+    <div class="project">    
+        <p>I am an aspiring back-end developer with a strong foundation in server-side programming and a passion for creating robust and scalable applications.</p>
+        <p>My academic background in computer science, combined with practical project experience, has honed my skills in various back-end technologies and programming languages, particularly Python, Java, and SQL. I am proficient in frameworks such as Flask and Spring Boot, and have a solid understanding of database management and API development.</p>
+        <p>I have experience in include Java, Spring, Python, Flask, SQL, NoSQL, HTML, JavaScript, CSS and Git/GitHub</p>
+        <!-- Add more details about yourself here -->
+    </div>
 </section>
 
 <section id="projects">
@@ -51,9 +53,8 @@
         </div>
         <br>
         <div class="link-group" style="text-align: center;">
-            <a href="https://github.com/Alistair70/expense_tracker">View Repo</a>
-            <br><br>
-            <a href="https://landing.expense-tracker-demo.site/">Demo</a>
+            <button id="exp_tr_repo" type="submit" class  ="btn_white">View Repo</button>
+            <button id="exp_tr_demo" type="submit" class  ="btn_black">View Demo</button>
         </div>
         <!-- Add images, links, or other details about your projects -->
     </div>
@@ -69,7 +70,7 @@
         </div>
         <br>
         <div class="link-group" style="text-align: center;">
-            <a href="https://github.com/Alistair70/stock_tracker">View Repo</a>
+            <button id="st_repo" type="submit" class  ="btn_white">View Repo</button>
         </div>
         <!-- Add images, links, or other details about your projects -->
     </div>
@@ -87,9 +88,8 @@
         </div>
         <br>
         <div class="link-group" style="text-align: center;">
-            <a href="https://github.com/Alistair70/random-pw-gen">View Repo</a>
-            <br><br>
-            <a href="https://ac-random-pw-gen.netlify.app">Demo</a>
+            <button id="rpg_repo" type="submit" class  ="btn_white">View Repo</button>
+            <button id="rpg_demo" type="submit" class  ="btn_black">View Demo</button>
         </div>
     </div>
     <!-- Add more projects as needed -->
@@ -154,7 +154,7 @@
             <p id = output></p><br>
         </div>        
         <div class = "center" >
-            <button id="submit" type="submit" class  ="btn_new">Send</button>
+            <button id="submit" type="submit" class  ="btn_black">Send</button>
         </div>
         
     </form>
