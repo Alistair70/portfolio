@@ -110,3 +110,17 @@ document.getElementById("rpg_demo").addEventListener("click", function() {
 document.getElementById("rpg_repo").addEventListener("click", function() {
     window.open('https://github.com/Alistair70/random-pw-gen', '_blank');
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    visitLog();
+});
+
+function visitLog()
+{
+    fetch('https://main-py-server.onrender.com/visit_log', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+}
